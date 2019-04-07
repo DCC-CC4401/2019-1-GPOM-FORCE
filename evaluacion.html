@@ -2,23 +2,22 @@
 <html>
 
 <head>
-        <style>
-                table {
-                  font-family: arial, sans-serif;
-                  border-collapse: collapse;
-                  width: 50%;
-                }
-                
-                td, th {
-                  border: 1px solid #dddddd;
-                  text-align: left;
-                  padding: 8px;
-                }
-                
-                tr:nth-child(even) {
-                  background-color: #dddddd;
-                }
-                </style>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,15 +25,21 @@
     <title>Vista Evaluación</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -94,16 +99,18 @@
         </nav>
 
         <!-- Page Content  -->
-        <div id="content">
+        <div id="content" style="vertical-align:top;">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    
+
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
                         <span></span> <!-- Aqui va el nombre de la barra-->
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
 
@@ -127,78 +134,141 @@
                 </div>
             </nav>
             <!-- Aqui empieza el cuerpo de la pagina, despues del nav-->
-            <div>
-                
-                <table>
-                    <tr>
-                        <th>
-                        
-                        </th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td>Evaluación</td>
-                        <td>
-                            <input type="text" name="nombre_evaluacion"><br>
-                        </td>
-                    </tr>        
-                    <tr><td>Curso</td><td>                        <select>
-                            <option value="volvo">CC4401-1 Otoño</option>
-                            <option value="saab">CC4401-2 Primavera</option>
-                            <option value="mercedes">CC4401-1 Otoño</option>
-                            <option value="audi">CC4401-2 Primavera</option>
-                          </select> </td></tr>
-                    <tr><td>Inicio</td>
-                        <td><input type="date" name="bday"></td></tr>
-                    <tr><td>Fin</td><td><input type="date" name="bday"></td></tr>
-                    <tr><td>Duracion Presentación</td><td><input type="number" name="nombre_evaluacion"><br></td></tr>
-                    <tr><td>Estado</td><td>
-                        <select>
-                            <option value="publicado">Publicado</option>
-                            <option value="pendiente">Pendiente</option>
-                            
-                          </select> 
-                    </td> </tr>
 
-                </table>
-                <br>
-                <br>
-                <td><button type="button" class="btn btn-primary">Guardar</button></td>
-                <td><button type="button" class="btn btn-danger">Borrar</button></td>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Evaluaciones</h2>
+                                <table>
+                                    <tr>
+                                        <td>Evaluación</td>
+                                        <td>
+                                            <input type="text" name="nombre_evaluacion"><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Curso</td>
+                                        <td> <select>
+                                                <option value="volvo">CC4401-1 Otoño</option>
+                                                <option value="saab">CC4401-2 Primavera</option>
+                                                <option value="mercedes">CC4401-1 Otoño</option>
+                                                <option value="audi">CC4401-2 Primavera</option>
+                                            </select> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inicio</td>
+                                        <td><input type="date" name="bday"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fin</td>
+                                        <td><input type="date" name="bday"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Duracion Presentación</td>
+                                        <td><input type="number" name="nombre_evaluacion"><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rúbrica</td>
+                                        <td>
+                                            <select>
+                                                <option value="publicado">Rúbrica 1</option>
+                                                <option value="pendiente">Rúbrica 2</option>
+                                                <option value="publicado">Rúbrica 3</option>
+                                                <option value="publicado">Rúbrica 6</option>
+
+                                            </select>
+                                            <button type="button" class="btn btn-primary">Ver/Editar</button>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                                <button type="button" class="btn btn-success">Guardar y publicar</button>
+                                <button type="button" class="btn btn-primary">Guardar</button>
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                            </div>
+                            <div class="col-md-6">
+                                <h2>Evaluadores</h2>
+                                
+                                <table>
+                                    <tr>
+                                        <th>Evaluador</th>
+                                        <th>Evaluaciones por completar</th>
+                                        <th></th>
+                                    </tr>
+                                        <td>Administrador</td>
+                                        <td>4</td>
+                                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+
+                                    <tr>
+                                            <td>Aux 1</td>
+                                            <td>4</td>
+                                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                                    </tr>
+                                    <tr>
+                                            <td>Temporal 2</td>
+                                            <td>4</td>
+                                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                                    </tr>
+                                    <tr>
+                                            <td>Visitante 1</td>
+                                            <td>0</td>
+                                        <td><button type="button" class="btn btn-success">Agregar</button></td>
+                                    </tr>
+                                    <tr>
+                                            <td>Aux 2</td>
+                                            <td>0</td>
+                                        <td><button type="button" class="btn btn-success">Agregar</button></td>
+                                    </tr>
+                                    
+                                </table>
+               
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
-    </div>
 
-    <div class="overlay"></div>
+        <div class="overlay"></div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').removeClass('active');
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').addClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
             });
-
-            $('#dismiss, .overlay').on('click', function () {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
