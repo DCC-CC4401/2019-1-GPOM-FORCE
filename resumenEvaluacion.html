@@ -2,6 +2,58 @@
 <html>
 
 <head>
+    <style>
+      table {
+         font-family: arial, sans-serif;
+         border-collapse: collapse;
+         width: 100%;
+        }
+
+       td, th {
+         border: 1px solid #dddddd;
+         text-align: left;
+         padding: 8px;
+        }
+
+        tr:nth-child(even) {
+         background-color: #dddddd;
+        }
+
+        .dropbtn {
+  background-color: #FAFAD2;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +70,7 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   
 
 </head>
 
@@ -25,56 +78,7 @@
 
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div id="dismiss">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-
-            <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- Barra de navegacion de la SideBar-->
-                <li>
-                    <a href="#">About</a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
+       
 
         <!-- Page Content  -->
         <div id="content">
@@ -82,10 +86,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span></span> <!-- Aqui va el nombre de la barra-->
-                    </button>
+                   <span>Ingeniería de Software<br>CC4401-1 Otoño 2019</span> <!-- Aqui va el nombre de la barra-->
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
@@ -96,15 +97,6 @@
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Resumen Evaluación</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
                         </ul>
                     </div>
                     
@@ -112,6 +104,121 @@
             </nav>
 
             <!-- Aqui empieza el cuerpo despues del -->
+            <div>
+                <p>
+                    
+                </p>
+            </div>
+            <div>
+
+
+            <table>
+                <th>Criterio</th>
+                <th>0.0</th>
+                <th>0.3</th>
+                <th>0.7</th>
+                <th>1.0</th>
+                <th>Puntaje obtenido</th>
+               
+                <tr>
+                  <td>Modelo de datos</td>
+                  <td>No incluye su modelo de datos.</td>
+                  <td>Incluye su modelo de datos, pero no explica las entidades principales.</td> 
+                  <td>Incluye su modelo de datos y explica las entidades principales.</td> 
+                  <td>Incluye su modelo de datos, explica las entidades principales y las relaciones entre estas.</td>
+                  <td><div class="dropdown">
+  <button class="dropbtn">0.7</button>
+  <div class="dropdown-content" style="float:right;">
+    <a href="#">Evaluador 1: 0.7</a>
+    <a href="#">Evaluador 2: 0.7</a>
+    <a href="#">Evaluador 3: 0.7</a>
+    <a href="#">Promedio sección: 0.6</a>
+  </div>
+</div></td> 
+                </tr>
+                <tr>
+                    <td>Demo: completitud c/r a funcionalidad solicitada</td>
+                    <td>Solo describe las interfaces, sin explicar cómo satisfacen los requisitos.</td>
+                    <td>Solo para algunas interfaces muestra como satisfacen los requisitos funcionales.</td>
+                    <td>Para casi todas las interfaces, muestra como satisfacen los requisitos funcionales.</td>
+                    <td>Muestra claramente que las interfaces satisfacen los requisitos funcionales.</td>
+                    <td><div class="dropdown">
+  <button class="dropbtn">1.0</button>
+  <div class="dropdown-content">
+    <a href="#">Evaluador 1: 1.0</a>
+    <a href="#">Evaluador 2: 1.0</a>
+    <a href="#">Evaluador 3: 1.0</a>
+    <a href="#">Promedio sección: 0.6</a>
+  </div>
+</div></td> 
+                </tr>
+                <tr>
+                    <td>Demo: fallas</td>
+                    <td>Demasiadas fallas severas durante la demo, no se pudo continuar haciendo la demo.</td>
+                    <td>Varias fallas de mediana severidad durante la demo, solo se pudo mostrar en forma parcial la funcionalidad.</td>
+                    <td>Algunas fallas de mediana severidad durante la demo, se pudo mostrar en forma casi completa la funcionalidad</td>
+                    <td>Muy pocas fallas de baja severidad durante la demo, se pudo mostrar en forma completa la funcionalidad.</td>
+                    <td><div class="dropdown">
+  <button class="dropbtn">0.8</button>
+  <div class="dropdown-content">
+    <a href="#">Evaluador 1: 0.7</a>
+    <a href="#">Evaluador 2: 0.7</a>
+    <a href="#">Evaluador 3: 1.0</a>
+    <a href="#">Promedio sección: 0.6</a>
+  </div>
+</div></td>
+                </tr>
+                <tr>
+                    <td>Calidad del material (presentación y demo)</td>
+                    <td>Presentación: muchos errores ortográficos, todas las imágenes son de baja resolución. Demo: usan nombres genéricos para items, repiten casi todas las imágenes en la demo.</td>
+                    <td>Presentación: algunos errores ortográficos, casi todas las imágenes son de baja resolución. Demo: solo usan algunos nomres genéricos, solo repiten algunas imágenes en la demo.</td> 
+                    <td>Presentación: pocos errores ortográficos, solo algunas imágenes son de baja resolución. Demo: solo usan algunos nombres genéricos, solo repiten algunas imágenes en la demo.</td>
+                    <td>Presentación: pocos errores ortográficos, todas las imágenes son de buena resolución. Demo: no usa nombres genéricos ni repiten imágenes.</td>
+                    <td><div class="dropdown">
+  <button class="dropbtn">0.3</button>
+  <div class="dropdown-content">
+    <a href="#">Evaluador 1: 0.3</a>
+    <a href="#">Evaluador 2: 0.3</a>
+    <a href="#">Evaluador 3: 0.3</a>
+    <a href="#">Promedio sección: 0.6</a>
+  </div>
+</div></td> 
+                </tr>
+                <tr>
+                    <td>Organización de la información</td>
+                    <td>No se entiende la presentación o demo porque no hay secuencia lógica de información.</td>
+                    <td>Es difícil seguir la presentación o demo. porque el presentador "salta" entre diapositivas.</td> 
+                    <td>La información está presentada en una secuencia lógica.</td>
+                    <td>La información es presentada en una forma lógica e interesante.</td>
+                    <td><div class="dropdown">
+  <button class="dropbtn">0.8</button>
+  <div class="dropdown-content">
+    <a href="#">Evaluador 1: 1.0</a>
+    <a href="#">Evaluador 2: 0.7</a>
+    <a href="#">Evaluador 3: 0.7</a>
+    <a href="#">Promedio sección: 0.7</a>
+  </div>
+</div></td> 
+                </tr>
+                <tr>
+                    <td>Forma</td>
+                    <td>No se entiende lo que dice (en términos fonéticos y cinéticos)</td>
+                    <td>Se entiende lo que dice de manera parcial(su cuerpo no acompaña sus palabras)</td>
+                    <td>Se da a entender, presentando de manera eficiente y adecuado lenguaje corporal.</td>
+                    <td>Se da a entender siempre, destacando en su forma(pausas, dicció, contacto visual, gesticulación, otros).</td>
+                    <td><div class="dropdown">
+  <button class="dropbtn">0.7</button>
+  <div class="dropdown-content">
+    <a href="#">Evaluador 1: 0.7</a>
+    <a href="#">Evaluador 2: 0.7</a>
+    <a href="#">Evaluador 3: 0.7</a>
+    <a href="#">Promedio sección: 0.9</a>
+  </div>
+</div></td> 
+                </tr>
+
+            </table>
+            </div>
         
         </div>
     </div>
