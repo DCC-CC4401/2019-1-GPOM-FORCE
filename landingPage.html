@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="es" >
+<html>
 
 <head>
+<<<<<<< HEAD
     <meta charset="utf-8" />
     <title>Página Principal Admin</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -32,10 +33,96 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-table"></i>Rúbricas</a>
+=======
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Página Principal</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>Menú</h3>
+            </div>
+
+            <ul class="list-unstyled components text-center">
+                <!-- Barra de navegacion de la SideBar-->
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-list-ol"></i> Cursos</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Crear</a>
+                        </li>
+                        <li>
+                            <a href="#">Modificar</a>
+                        </li>
+                        <li>
+                            <a href="#">Eliminar</a>
+                        </li>
+                    </ul>
+                    <a href="#aboutSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-book"></i> Evaluaciones</a>
+                    <ul class="collapse list-unstyled" id="aboutSubmenu">
+                        <li>
+                            <a href="#">Crear</a>
+                        </li>
+                        <li>
+                            <a href="#">Modificar</a>
+                        </li>
+                        <li>
+                            <a href="#">Eliminar</a>
+                        </li>
+                    </ul>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-table"></i> Rúbricas</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Crear</a>
+                        </li>
+                        <li>
+                            <a href="#">Modificar</a>
+                        </li>
+                        <li>
+                            <a href="#">Eliminar</a>
+                        </li>
+                    </ul>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-users"></i> Evaluadores</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Crear</a>
+                        </li>
+                        <li>
+                            <a href="#">Modificar</a>
+                        </li>
+                        <li>
+                            <a href="#">Eliminar</a>
+                        </li>
+                    </ul>
+>>>>>>> c2137ac0bd5c56c6e0057239f878863333464966
                 </li>
             </ul>
         </nav>
 
+<<<<<<< HEAD
         <div class="card" style="width: 100%;">
             <div class="card-header">
               Evaluadores
@@ -89,3 +176,439 @@
 </body>
   
 </html>
+=======
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span> <!-- Aqui va el nombre de la barra-->
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <!--Barra de navegacion superior derecha-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <a class="nav navbar-nav ml-auto">Nombre Usuario</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Aqui empieza el cuerpo de la pagina, despues del nav-->
+            <div class="card" style="width: 100%;">
+                <div class="card-header">Cursos <i class="fa fa-list-ol"></i></div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item dropleft">Crear 
+                        <button type="button" class="btn btn-info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;">+</button>
+                        <form class="dropdown-menu p-4">
+                            <div class="form-group">
+                              <label for="exampleDropdownFormEmail2">Código del Curso</label>
+                              <input type="text" class="form-control" id="exampleDropdownFormEmail2" placeholder="CC1234-5">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleDropdownFormPassword2">Nombre del Curso</label>
+                              <input type="text" class="form-control" id="exampleDropdownFormPassword2" placeholder="Computación">
+                            </div>
+                            <button type="submit" class="btn btn-info">Guardar</button>
+                        </form>
+                    </li>
+                    <li class="list-group-item dropleft">Modificar
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;"></button>
+                        <table class="dropdown-menu p-4 text-center">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Código</th>
+                                    <th>Editar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Curso 1</td>
+                                    <td>CC1111-1</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Curso 2</td>
+                                    <td>CC2222-2</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Curso 3</td>
+                                    <td>CC3333-3</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Curso 4</td>
+                                    <td>CC4444-4</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Curso 5</td>
+                                    <td>CC5555-5</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="list-group-item dropleft">Eliminar
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;"></button>
+                        <table class="dropdown-menu p-4 text-center">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Código</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Curso 1</td>
+                                    <td>CC1111-1</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Curso 2</td>
+                                    <td>CC2222-2</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Curso 3</td>
+                                    <td>CC3333-3</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Curso 4</td>
+                                    <td>CC4444-4</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Curso 5</td>
+                                    <td>CC5555-5</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="card" style="width: 100%;">
+                <div class="card-header">Evaluaciones <i class="fa fa-book"></i></div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item dropleft">Crear 
+                        <button type="button" class="btn btn-info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;">+</button>
+                        <form name="Form2" class="dropdown-menu p-4">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail2">Nombre Evaluación</label>
+                                <input type="text" class="form-control" id="exampleDropdownFormEmail2" placeholder="CC1234-5">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail2">Código del Curso</label>
+                                <input type="text" class="form-control" id="exampleDropdownFormEmail2" placeholder="CC1234-5">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword2">Fecha Inicio</label>
+                                <input type="date" class="form-control" id="exampleDropdownFormPassword2" placeholder="DD/MM/YY">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword2">Fecha Termino</label>
+                                <input type="date" class="form-control" id="exampleDropdownFormPassword2" placeholder="DD/MM/YY">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword2">Rúbrica</label><br>
+                                <select name="Rúbricas" required="true" form="Form2">
+                                    <option value="Rúbrica 1">Rúbrica 1</option>
+                                    <option value="Rúbrica 2">Rúbrica 2</option>
+                                    <option value="Rúbrica 3">Rúbrica 3</option>
+                                    <option value="Rúbrica 4">Rúbrica 4</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-info">Guardar</button>
+                        </form>
+                    </li>
+                    <li class="list-group-item dropleft">Modificar
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;"></button>
+                        <table class="dropdown-menu p-4 text-center">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Curso</th>
+                                    <th>Editar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Evaluación 1</td>
+                                    <td>CC1111-1</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluación 2</td>
+                                    <td>CC2222-2</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluación 3</td>
+                                    <td>CC3333-3</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluación 4</td>
+                                    <td>CC4444-4</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluación 5</td>
+                                    <td>CC5555-5</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="list-group-item dropleft">Eliminar
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;"></button>
+                        <table class="dropdown-menu p-4 text-center">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Curso</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Evaluación 1</td>
+                                    <td>CC1111-1</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluación 2</td>
+                                    <td>CC2222-2</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluación 3</td>
+                                    <td>CC3333-3</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluación 4</td>
+                                    <td>CC4444-4</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluación 5</td>
+                                    <td>CC5555-5</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>               
+                </ul>
+            </div>
+        
+            <div class="card" style="width: 100%;">
+                <div class="card-header">Rúbricas <i class="fa fa-table"></i></div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item dropleft">Crear 
+                        <button type="button" class="btn btn-info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;">+</button>
+                    </li>
+                    <li class="list-group-item dropleft">Modificar
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;"></button>
+                        <table class="dropdown-menu p-4 text-center">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Editar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rúbrica 1</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Rúbrica 2</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Rúbrica 3</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Rúbrica 4</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Rúbrica 5</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="list-group-item dropleft">Eliminar
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;"></button>
+                        <table class="dropdown-menu p-4 text-center">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rúbrica 1</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Rúbrica 2</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Rúbrica 3</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Rúbrica 4</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Rúbrica 5</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>               
+                </ul>
+            </div>
+
+            <div class="card" style="width: 100%;">
+                <div class="card-header">Evaluadores <i class="fa fa-users"></i></div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item dropleft">Crear 
+                        <button type="button" class="btn btn-info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;">+</button>
+                        <form name="Form2" class="dropdown-menu p-4">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail2">Nombre</label>
+                                <input type="text" class="form-control" id="exampleDropdownFormEmail2" placeholder="Juanito">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail2">Apellido</label>
+                                <input type="text" class="form-control" id="exampleDropdownFormEmail2" placeholder="Pérez">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword2">Email</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormPassword2" placeholder="jperez@gmail.com">
+                            </div>
+                            <button type="submit" class="btn btn-info">Guardar</button>
+                        </form>
+                    </li>
+                    <li class="list-group-item dropleft">Modificar
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;"></button>
+                        <table class="dropdown-menu p-4 text-center">
+                            <thead>
+                                <tr>
+                                    <th>Nombre Completo</th>
+                                    <th>Editar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Evaluador 1</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluador 2</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluador 3</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluador 4</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluador 5</td>
+                                    <td><i class="fa fa-edit"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="list-group-item dropleft">Eliminar
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;"></button>
+                        <table class="dropdown-menu p-4 text-center">
+                            <thead>
+                                <tr>
+                                    <th>Nombre Completo</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Evaluador 1</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluador 2</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluador 3</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluador 4</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluador 5</td>
+                                    <td><i class="fa fa-trash-alt"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>               
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
+>>>>>>> c2137ac0bd5c56c6e0057239f878863333464966
