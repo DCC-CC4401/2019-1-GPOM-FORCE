@@ -108,134 +108,140 @@
                 </div>
             </nav>
             <!-- Aqui empieza el cuerpo de la pagina, despues del nav-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <h2>Evaluador</h2>
+                            <table style="width:100%">
+                                <tr>
+                                    <th>Nombre Grupo</th>
+                                    <th>Presentador</th>
+                                    <th>Estado Evaluación</th>
+                                    <th>Tiempo</th>
+                                    <th>Detalles</th>
+                                </tr>
+                                <tr>
 
+                                    <td>Grupo 1:Electronic-Operations </td>
+                                    <td>Armando Casas</td>
+                                    <td>Completa</td>
+                                    <td>7:10 Minutos</td>
+                                    <td><button type="button" class="btn btn-success">Evaluar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Grupo 6: GPOM-FORCE</td>
+                                    <td>Armando Barreras, Armando Muros</td>
+                                    <td>Pendiente</td>
+                                    <td>6:59 Minutos</td>
+                                    <td><button type="button" class="btn btn-primary">Evaluar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Grupo 13: Grupo-13 </td>
+                                    <td>Armando Páginas</td>
+                                    <td>Sin Evaluación</td>
+                                    <td>No ha presentado</td>
+                                    <td><button type="button" class="btn btn-info">Evaluar</button></td>
+                                </tr>
+                            </table>
+                            <br>
 
+                            <!--Vista Admin-->
+                            <h2>Administrador</h2>
+                            <table style="width:100%">
+                                <tr>
+                                    <th>Nombre Grupo</th>
+                                    <th>Presentador</th>
+                                    <th>Evaluaciones subidas</th>
+                                    <th>Estado Evaluación</th>
+                                    <th>Tiempo</th>
+                                    <th>Detalles</th>
+                                </tr>
+                                <tr>
 
-            
-            <div>
-                <h2>Evaluador</h2>
-                <table style="width:100%">
-                    <tr>
-                        <th>Nombre Grupo</th>
-                        <th>Presentador</th>
-                        <th>Evaluación</th>
-                        <th>Tiempo</th>
-                        <th>Detalles</th>
-                    </tr>
-                    <tr>
+                                    <td>Grupo 1:Electronic-Operations </td>
+                                    <td><select>
+                                            <option value="volvo">Armando Rúbricas</option>
+                                            <option value="saab">Armando Listas</option>
+                                            <option value="mercedes">Armando Dropdowns</option>
+                                            <option value="audi">Armando Colores</option>
+                                        </select><button type="button" class="btn btn-primary">Añadir</button> </td>
+                                    <td>50/50</td>
+                                    <td>Completa</td>
+                                    <td><input type="time" name="nombre_evaluacion" size="4"> Minutos</td>
+                                    <td><button type="button" class="btn btn-success">Evaluar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Grupo 6: GPOM-FORCE</td>
+                                    <td><select>
+                                            <option value="volvo">Armando Rúbricas</option>
+                                            <option value="saab">Armando Listas</option>
+                                            <option value="mercedes">Armando Dropdowns</option>
+                                            <option value="audi">Armando Colores</option>
+                                        </select><button type="button" class="btn btn-primary">Añadir</button> </td>
 
-                        <td>Grupo 1:Electronic-Operations </td>
-                        <td>Armando Casas</td>
-                        <td>Completa</td>
-                        <td>7:10 Minutos</td>
-                        <td><button type="button" class="btn btn-success">Evaluar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Grupo 6: GPOM-FORCE</td>
-                        <td>Armando Barreras</td>
-                        <td>Incompleta</td>
-                        <td>6:59 Minutos</td>
-                        <td><button type="button" class="btn btn-primary">Evaluar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Grupo 13: Grupo-13 </td>
-                        <td>Armando Páginas</td>
-                        <td>Sin Evaluación</td>
-                        <td>No ha presentado</td>
-                        <td><button type="button" class="btn btn-info">Evaluar</button></td>
-                    </tr>
-                </table>
+                                    <td>14/50</td>
+                                    <td>Incompleta</td>
+                                    <td><input type="time" name="nombre_evaluacion" size="4"> Minutos</td>
+                                    <td><button type="button" class="btn btn-primary">Evaluar</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Grupo 13: Grupo-13 </td>
+                                    <td><select>
+                                            <option value="volvo">Armando Rúbricas</option>
+                                            <option value="saab">Armando Listas</option>
+                                            <option value="mercedes">Armando Dropdowns</option>
+                                            <option value="audi">Armando Colores</option>
+                                        </select><button type="button" class="btn btn-primary">Añadir</button> </td>
+                                    <td>0/13</td>
+                                    <td>Sin evaluaciones</td>
+                                    <td><input type="time" name="nombre_evaluacion" size="4"> Minutos</td>
+                                    <td><button type="button" class="btn btn-info">Evaluar</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
                 <br>
 
-                <!--Vista Admin-->
-                <h2>Administrador</h2>
-                <table style="width:100%">
-                    <tr>
-                        <th>Nombre Grupo</th>
-                        <th>Presentador</th>
-                        <th>Evaluaciones subidas</th>
-                        <th>Tiempo</th>
-                        <th>Detalles</th>
-                    </tr>
-                    <tr>
-
-                        <td>Grupo 1:Electronic-Operations </td>
-                        <td><select>
-                                <option value="volvo">Armando Rúbricas</option>
-                                <option value="saab">Armando Listas</option>
-                                <option value="mercedes">Armando Dropdowns</option>
-                                <option value="audi">Armando Colores</option>
-                            </select><button type="button" class="btn btn-primary">Añadir</button> </td>
-                        <td>50/50</td>
-                        <td><input type="time" name="nombre_evaluacion" size="4"> Minutos</td>
-                        <td><button type="button" class="btn btn-success">Evaluar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Grupo 6: GPOM-FORCE</td>
-                        <td><select>
-                                <option value="volvo">Armando Rúbricas</option>
-                                <option value="saab">Armando Listas</option>
-                                <option value="mercedes">Armando Dropdowns</option>
-                                <option value="audi">Armando Colores</option>
-                            </select><button type="button" class="btn btn-primary">Añadir</button> </td>
-                        
-                        <td>14/50</td>
-                        <td><input type="time" name="nombre_evaluacion" size="4"> Minutos</td>
-                        <td><button type="button" class="btn btn-primary">Evaluar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Grupo 13: Grupo-13 </td>
-                        <td><select>
-                                <option value="volvo">Armando Rúbricas</option>
-                                <option value="saab">Armando Listas</option>
-                                <option value="mercedes">Armando Dropdowns</option>
-                                <option value="audi">Armando Colores</option>
-                            </select><button type="button" class="btn btn-primary">Añadir</button> </td>
-                        <td>0/13</td>
-                        <td><input type="time" name="nombre_evaluacion" size="4"> Minutos</td>
-                        <td><button type="button" class="btn btn-info">Evaluar</button></td>
-                    </tr>
-                </table>
-                <br>
-                
                 <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h2>Pendientes</h2>
-                                        <table>
-                                                <tr>
-                                                    <th>Nombre Evaluador</th>
-                                                    <th>Evaluaciones Completadas</th>
-                                                </tr>
-                                                <tr>
-                                                    <td>Armando Páginas</td>
-                                                    <td>5/10</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Armando Templates</td>
-                                                    <td>10/10</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Armando Botellas</td>
-                                                    <td>1/10</td>
-                                                </tr>
-                                            </table>
-                                    </div>
-                                    
-        
-                                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2>Evaluaciones sin responder por evaluador</h2>
+                                    <table>
+                                        <tr>
+                                            <th>Nombre Evaluador</th>
+                                            <th>Evaluaciones Completadas</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Armando Páginas</td>
+                                            <td>5/10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Armando Templates</td>
+                                            <td>10/10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Armando Botellas</td>
+                                            <td>1/10</td>
+                                        </tr>
+                                    </table>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
-        
-
-                
+                </div>
             </div>
+
+
+
         </div>
     </div>
+
 
     <div class="overlay"></div>
 
