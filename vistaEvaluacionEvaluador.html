@@ -2,6 +2,33 @@
 <html>
 
 <head>
+    <style>
+        option.red {
+            background-color: rgba(201, 76, 76, 0.3)
+        }
+
+        button.btn-primary.custom-btn {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -127,21 +154,21 @@
                                     <td>Armando Casas</td>
                                     <td>Completa</td>
                                     <td>7:10 Minutos</td>
-                                    <td><button type="button" class="btn btn-success">Evaluar</button></td>
+                                    <td><button type="button" class="btn btn-primary custom-btn">Evaluar</button></td>
                                 </tr>
                                 <tr>
                                     <td>Grupo 6: GPOM-FORCE</td>
                                     <td>Armando Barreras, Armando Muros</td>
                                     <td>Pendiente</td>
                                     <td>6:59 Minutos</td>
-                                    <td><button type="button" class="btn btn-primary">Evaluar</button></td>
+                                    <td><button type="button" class="btn btn-primary custom-btn">Evaluar</button></td>
                                 </tr>
                                 <tr>
                                     <td>Grupo 13: Grupo-13 </td>
                                     <td>Armando Páginas</td>
                                     <td>Sin Evaluación</td>
                                     <td>No ha presentado</td>
-                                    <td><button type="button" class="btn btn-info">Evaluar</button></td>
+                                    <td><button type="button" class="btn btn-primary custom-btn">Evaluar</button></td>
                                 </tr>
                             </table>
                             <br>
@@ -161,42 +188,42 @@
 
                                     <td>Grupo 1:Electronic-Operations </td>
                                     <td><select>
-                                            <option value="volvo">Armando Rúbricas</option>
+                                            <option value="volvo" class="red">Armando Rúbricas</option>
                                             <option value="saab">Armando Listas</option>
                                             <option value="mercedes">Armando Dropdowns</option>
                                             <option value="audi">Armando Colores</option>
-                                        </select><button type="button" class="btn btn-primary">Añadir</button> </td>
+                                        </select><button type="button" class="btn btn-primary custom-btn">Añadir <i class="fa fa-plus"></i></button></td>
                                     <td>50/50</td>
                                     <td>Completa</td>
                                     <td><input type="time" name="nombre_evaluacion" size="4"> Minutos</td>
-                                    <td><button type="button" class="btn btn-success">Evaluar</button></td>
+                                    <td><button type="button" class="btn btn-primary custom-btn">Evaluar</button></td>
                                 </tr>
                                 <tr>
                                     <td>Grupo 6: GPOM-FORCE</td>
                                     <td><select>
                                             <option value="volvo">Armando Rúbricas</option>
-                                            <option value="saab">Armando Listas</option>
+                                            <option value="saab" class="red">Armando Listas</option>
                                             <option value="mercedes">Armando Dropdowns</option>
                                             <option value="audi">Armando Colores</option>
-                                        </select><button type="button" class="btn btn-primary">Añadir</button> </td>
+                                        </select><button type="button" class="btn btn-primary custom-btn">Añadir <i class="fa fa-plus"></i></button></td>
 
                                     <td>14/50</td>
                                     <td>Incompleta</td>
                                     <td><input type="time" name="nombre_evaluacion" size="4"> Minutos</td>
-                                    <td><button type="button" class="btn btn-primary">Evaluar</button></td>
+                                    <td><button type="button" class="btn btn-primary custom-btn">Evaluar</button></td>
                                 </tr>
                                 <tr>
                                     <td>Grupo 13: Grupo-13 </td>
                                     <td><select>
                                             <option value="volvo">Armando Rúbricas</option>
                                             <option value="saab">Armando Listas</option>
-                                            <option value="mercedes">Armando Dropdowns</option>
+                                            <option value="mercedes" class="red">Armando Dropdowns</option>
                                             <option value="audi">Armando Colores</option>
-                                        </select><button type="button" class="btn btn-primary">Añadir</button> </td>
+                                        </select><button type="button" class="btn btn-primary custom-btn">Añadir <i class="fa fa-plus"></i></button></td>
                                     <td>0/13</td>
                                     <td>Sin evaluaciones</td>
                                     <td><input type="time" name="nombre_evaluacion" size="4"> Minutos</td>
-                                    <td><button type="button" class="btn btn-info">Evaluar</button></td>
+                                    <td><button type="button" class="btn btn-primary custom-btn">Detalles</button></td>
                                 </tr>
                             </table>
                         </div>
